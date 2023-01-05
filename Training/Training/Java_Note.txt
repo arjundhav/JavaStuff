@@ -1,0 +1,174 @@
+OOPS is the concept of objects rather than just functions and procedures. 
+   - bottom-up approach
+   - Avoids unnecessary data exposure (abstraction)
+   - Allows the reusability of code (inheritance)
+   - Provides more security
+ 
+Class: It is blueprint that includes all the data members(vars,constants) & member functions.
+       It describes behaviour & state of object.
+       It is best example of data binding(Encapsulation)
+        
+Diff between structure & Class: 
+       - Structure deals with data members only.
+       - It does not support inheritance.
+       - The keyword struct defines a structure.
+       
+               
+Object: It is instance of class that containsattributes,behaviour & properties of vars & methods
+   
+Constructor: 
+       - A method to initialize the object of its class.
+       - can't be inherited through derived class
+       - It must have same name as of class & does'nt have  return type
+       - It gets executed as object of class is created
+       - It cannot be overridden.
+   
+   
+this keyword:
+       - used as reference variable of current object
+       - Is used to invoke current class construtor,method
+       - it is passed as an arg in constructor call or method call   
+   
+       
+Inheritance: 
+       - It is OOPS concept in which one object acquires all props and behaviors of a parent object.
+       - It helps to provides code reusablity feature i.e  facilitates you to reuse the fields and methods of the existing class.  
+       - Types: Single , Multi-Level , Heirarchical , Hybrid
+       
+       - IS-A Relationship is completed related to inheritance. 
+          eg: a carrot is a vegetable; 
+              a fan is a device.
+          
+       - HAS-A Relationship means instance of classA has a reference to instance of classB or an other instance of the same class. 
+          eg: a car has an engine   
+              a dog has a tail
+                     
+       - Aggregaton:Represents HAS-A relationship. An class has an entity reference it is said to be represent HAS-A relationship  
+
+       - Why Multiple Inheritance is not supported in Java?
+          Ans:
+             Consider a class A,B & C, let class C extend class A & class B
+             Now, consider a method read() in both class A & class B. 
+             The method read() in class A is different from the method read() in class B. 
+             But, while inheritance happens, the compiler has difficulty in deciding on which read() to inherit. 
+             So, in order to avoid such kind of ambiguity, multiple inheritance is not supported in Java. 
+       
+super keyword: 
+        
+       - reference var used to refer parent class objects
+       - used to refer immediate parent class instance variable
+       - Used to invoke parent class method & Constructor
+       
+
+Polymorphism:
+    - One task or object can be used for different purposesi.e one can have many forms
+      - eg: A man can be son ,brother,husband,father at a same time.  
+    
+    - Runtime polymorphism is a process in which a call to an overridden method is resolved at runtime rather than compile-time. 
+      It is also known as Dynamic binding, Late binding and overriding as well.
+      Method Overriding is Runtime Poly & Inheritance is involved.
+      
+      
+    - CompileTime polymorphism resolved by the compiler.
+      It is also known as Static binding, Early binding and overloading as well.
+      Method Overloading is Compiletime Poly & no Inheritance. 
+
+    
+Abstraction: 
+     - Hiding implementation details from user & only provide services to user.
+       eg: ATM machine 
+       
+     - if method is abstract it must be in abstract class.   
+
+Interfaces:
+     - An interface in Java is a blueprint of a class but cant be instantiated (only public mode)
+     - It has static constants and by default abstract methods.
+     - It is used to achieve abstraction.
+     - By interface, we can support the functionality of multiple inheritance.
+     - "implements" keyword is used
+     
+     syntax:  interface <interface_name>{  }
+     
+Package: 
+    - a group of similar types of classes, interfaces and sub-packages.
+    - mechanism for organizing java classes into namespaces
+    - classes in same package can access each others member
+    - Package name should be written in lower cases
+    
+ Pre-defined Packages:
+   - java.lang- This package provides the language basics.
+   - java.util- It is used for developing quality or reliable apps in java or J2EE  
+               It provides classes and interfaces related to collection framework, events, data structure etc.
+   - java.io −  It  provides classes and interfaces for file operations, and other input and output operations.               
+   - java.net − It provides classes and interfaces related to networking.
+   - java.sql − It provides classes and interfaces for accessing/manipulating the data stored in databases.
+   - java.awt - It provides classes and interfaces to create GUI components in Java.    
+           
+- A process of converting one data type to another is known as Typecasting    
+
+- In Upcasting we typecast a child object to a parent object. In child, can access methods of parent 
+
+- In Downcasting we typecast a parent object to a child object.Methods of both classes can be accessed
+    
+- Runtime exceptions are those exceptions that are thrown at runtime because of either wrong input data or because of wrong business logic etc. 
+  These are not checked by the compiler at compile time.
+  
+- Difference Error & Exception:
+    - An error is an irrecoverable condition occurring at runtime.
+    - While exceptions are conditions that occur because of bad input & are mostly recoverable.        
+  
+- Operators that cant be overloaded scope resolution(::),. operator ,sizeof operator etc.
+
+- DOM defines the logical structure of docs(HTML,XML) and the way a document is accessed and manipulated.  
+     - Doc -> HTML -> Head  i)Meta ii)Title             
+                   -> Body  i)H1  ii) H2
+                   
+- XML is strd for delivering content on internet i.e store & transport data 
+
+Generic Class: A class that can refer to any type is known as a generic class. 
+     -  Here,T type parameter is used to create the generic class.
+
+  Syntax: 
+          class MyGen<T>{  
+             T obj;  
+             void add(T obj){ this.obj=obj; }  
+             T get(){return obj;}  
+          }  
+  
+
+Editions of JAVA: 
+    
+   J2SE :  For developing desktop apps or forming core/base API 
+           Helpful for Client side standalone applications.(runs only one device)
+           for eg: Bank App
+        
+   J2EE :  For apps that run on server ex: Websites
+         
+           Client -> Server -> DB
+         
+           It includes JSP,Servlets etc.     
+           
+   J2ME(micro): Runs on small scale devices like mobilephones 
+           For ex: Games       
+            
+          
+- JDBC: It's Java API to connect and execute the query with the database.
+        Uses JDBC drivers to connect with the DB 
+    - java.sql package contains classes and interfaces for JDBC API    
+    - Steps: import packkages -> Register Driver Class -> create Con -> Create SQL -> Execute sql -> View -> Close con         
+    
+- DDL,DML,Transaction Control Language(COMMIT,Rollback,SavePoint),Data Control Language(GRANT,Revoke)
+
+
+ Following are the Major Differences between Scanner and BufferedReader Class in Java
+
+   -  BufferedReader is synchronous while Scanner is not. BufferedReader should be used if we are working with multiple threads.
+   -  BufferedReader has a significantly larger buffer memory than Scanner.
+   -  The Scanner has a little buffer (1KB char buffer) as opposed to the BufferedReader (8KB byte buffer), but it’s more than enough.
+   -  BufferedReader is a bit faster as compared to Scanner because the Scanner does the parsing of input data and BufferedReader simply reads a sequence of characters.     
+
+             
+Static inilization block: Contains only static elements vars methods
+        Static { .... }
+
+StdIn Format:  System.out.format(".%datatype",var)     For ex:  System.out.format(".%2f",add); will give add roundoff to 2  
