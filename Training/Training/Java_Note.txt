@@ -82,7 +82,7 @@ Abstraction:
 
 Interfaces:
      - An interface in Java is a blueprint of a class but cant be instantiated (only public mode)
-     - It has static constants and by default abstract methods.
+     - It has static constants and by default only abstract methods.
      - It is used to achieve abstraction.
      - By interface, we can support the functionality of multiple inheritance.
      - "implements" keyword is used
@@ -152,7 +152,7 @@ Editions of JAVA:
            For ex: Games       
             
           
-- JDBC: It's Java API to connect and execute the query with the database.
+DBC:  It's Java API to connect and execute the query with the database.
         Uses JDBC drivers to connect with the DB 
     - java.sql package contains classes and interfaces for JDBC API    
     - Steps: import packkages -> Register Driver Class -> create Con -> Create SQL -> Execute sql -> View -> Close con         
@@ -175,6 +175,26 @@ StdIn Format:  System.out.format(".%datatype",var)     For ex:  System.out.forma
 
 
 Java Collection framework:
-    It is framework that provides an architecture to store and manipulate the group of objects.
-    Using it we can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
-    Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet)
+   - It is framework that provides an architecture to store and manipulate the group of objects.
+   - Using it we can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+   - Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet)
+
+Heirarchy:
+   - Collection consists of:
+     i) List: ArrayList,LinkedList,Vector,Stack
+    ii) Queue: PriorityQueue,Deque,ArrayDeque
+   iii) Set: HashSet,LinkedHashSet,SortedSet,TreeSet
+    iv) Map: HashMap,HashTable,SortedMap
+
+  - List: Java List contains ordered collection of elements including duplicate values
+    
+    - ArrayList: It is list implementation where elements can be dynamically added or removed from list
+       syntax: ArrayList obj = new ArrayList();
+    
+    - LinkedList: Sequence of links which contains items
+       syntax: LinkedList obj = new LinkedList();
+
+    - Vector: It implements dynamic array & its objects can be accessed via index.   
+       syntax: Vector obj = new Vector(SIZE,INCREMENT);
+
+       
