@@ -172,3 +172,9 @@ Static inilization block: Contains only static elements vars methods
         Static { .... }
 
 StdIn Format:  System.out.format(".%datatype",var)     For ex:  System.out.format(".%2f",add); will give add roundoff to 2  
+
+
+Java Collection framework:
+    It is framework that provides an architecture to store and manipulate the group of objects.
+    Using it we can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+    Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet)
