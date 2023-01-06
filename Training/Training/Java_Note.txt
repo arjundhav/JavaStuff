@@ -198,3 +198,10 @@ Heirarchy:
        syntax: Vector obj = new Vector(SIZE,INCREMENT);
 
        
+ HashMap & HashSet:
+   HashMap and Hashtable both are used to store data in key and value form. 
+   Both are using hashing technique to store unique keys.      
+
+   Hashmap: It is non-synchronized,not safe thrread.It is fast 
+   
+   HashSet: It is synchronized bot slow
