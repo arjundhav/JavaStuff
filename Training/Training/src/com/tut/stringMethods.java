@@ -95,11 +95,5 @@ public class stringMethods {
         builder.append(" Arjun");
         System.out.println("Builder is: "+ builder);
 
-      
-
-
-
-
-
 }      
 }
