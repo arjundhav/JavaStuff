@@ -1,7 +1,4 @@
 package Generics;
-
-import java.util.*;
-
 public class TestGenerics {
 
 	  public static <E> void printArray(E[] elements) {
@@ -16,10 +13,10 @@ public class TestGenerics {
 		 Integer[] intArray = {10,20,30,40,50};
 		 Character charArray[] = {'J','A','V','A','P','O','I','N','T'};
 
-         System.out.println("Printing Integer Array");
+         System.out.println("Printingï¿½Integerï¿½Array");
 	     printArray(intArray);
 
-	     System.out.println("Printing Character Array");
+	     System.out.println("Printingï¿½Characterï¿½Array");
 	     printArray(charArray);	
  		}
  } 
