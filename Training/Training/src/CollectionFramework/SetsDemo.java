@@ -4,6 +4,13 @@ import java.util.*;
 
 public class SetsDemo {
     
+    enum Days{SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY}
+  
+    public static void enumSet(){
+        EnumSet<Days> set = EnumSet.of(Days.MONDAY, Days.TUESDAY);
+        System.out.println("EnumSet: "+set);
+    }
+
     public static void main(String[] args) {
      
         HashSet<String> set = new HashSet<String>();
@@ -26,6 +33,8 @@ public class SetsDemo {
 
         System.out.println("Is Jim in set: "+set.contains("Jim"));
         System.out.println("Size of set: "+set.size());
+
+        SetsDemo.enumSet();
     }
 }
 
