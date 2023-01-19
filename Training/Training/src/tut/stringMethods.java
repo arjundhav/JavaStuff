@@ -1,4 +1,4 @@
-package com.tut;
+package tut;
 import java.util.Arrays;
 
 public class stringMethods {

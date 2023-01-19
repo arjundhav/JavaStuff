@@ -1,4 +1,4 @@
-package com.tut;
+package tut;
 
 public class ConstructorTut {
     

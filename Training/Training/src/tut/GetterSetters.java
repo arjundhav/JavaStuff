@@ -1,4 +1,4 @@
-package com.tut;
+package tut;
 
 public class GetterSetters {
 
@@ -32,8 +32,6 @@ public class GetterSetters {
 }
 
 /*
-
- Theory:
 
  * Getters and Setters are used to access private variables of a class.
  * Getter returns the value , it returns the value of data type int, String,double, float, etc.
