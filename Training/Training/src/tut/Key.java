@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Key {
 	
-	String n;
+   String n;
  
    public Key(){
 	 this("Unlock the Lock using Pass !!! \\n");
@@ -31,8 +31,6 @@ public class Key {
 		
 		System.out.print(" \n Account Created !!!! ");
 	}
-
-	
 	
 	public static void main(String[] args) {
        

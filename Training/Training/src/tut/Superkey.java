@@ -1,6 +1,7 @@
 package tut;
 
-public interface supeer {
+public interface Superkey {
+	
 	public class Superclass 
 	 { 
 	   int i =20; 
@@ -9,6 +10,7 @@ public interface supeer {
 	    System.out.println("Superclass display method"); 
 	   } 
 	 } 
+
 	 public class Subclass extends Superclass 
 	  { 
 	   int i = 100; 
@@ -21,6 +23,7 @@ public interface supeer {
 	     System.out.println("superclass i value ="+super.i); 
 	    } 
 	  } 
+	  
 	 public class SuperUse
 	 { 
 	  public static void main(String args[]) 

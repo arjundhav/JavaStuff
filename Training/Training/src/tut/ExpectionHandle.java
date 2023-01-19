@@ -27,12 +27,17 @@ public class ExpectionHandle {
 	public void checkedE() {
 		
 		FileInputStream fin = null;
+		
 		try{
 		    fin = new FileInputStream("B:/myfile.txt"); 
 		}catch(FileNotFoundException fe){
 	            System.out.println("The specified file is not " +
 				"present at the given path");
-		 }
+		}finally{
+			System.out.println("Finally block is executed");
+		}
+
+
 		int k; 
 		try{
 		    while(( k = fin.read() ) != -1) 

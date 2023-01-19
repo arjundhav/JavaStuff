@@ -8,7 +8,7 @@ public class JDBC_delete {
 	public static void main(String[] args) {
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			//Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/arjun","root","123456"); 
 			Statement st = con.createStatement();
 			
@@ -33,6 +33,7 @@ public class JDBC_delete {
 				if(ch.equalsIgnoreCase("no"))
 			       break;
 			}	
+			in.close();
 		}
 		catch(Exception e){
 			System.out.println(e);

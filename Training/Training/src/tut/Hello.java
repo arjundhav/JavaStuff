@@ -15,7 +15,8 @@ public class Hello {
 	 
 	 private void privateModifier() {
 		 int localvariable = 20;
-		 System.out.println("Private Modifier Test");
+		 System.out.println("Private Modifier Test & localVar is" +localvariable);
+
 	 }
 	 
 	 protected void nonStaticTest() {

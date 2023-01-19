@@ -1,9 +1,10 @@
 package Company;
 
 public class Employee extends Manager {
-        
+    
+	@Override
 	public void pay() {
-		System.out.println("Employee Pay amount: ");
+		System.out.println("Employee Payable amount: ");
 	}
 	public static void main(String[] args) {
 		Employee e = new Employee();

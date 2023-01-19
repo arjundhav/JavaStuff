@@ -84,16 +84,15 @@ public class stringMethods {
         }
 
        // String is immutable whereas StringBuffer and StringBuilder are mutable classes.
-       //String buffers are safe for use by multiple threads.
-       StringBuffer buffer =new StringBuffer("Hello"); //Thread Safe
-         buffer.append(" World");
-         System.out.println("Buffer is: "+ buffer);
+       //String buffers are safe for use by multiple threads is Synchronized.
+        StringBuffer buffer =new StringBuffer("Hello"); //Thread Safe
+        buffer.append(" World");
+        System.out.println("Buffer is: "+ buffer);
        
        // String Builder class used to create a mutable, or  modifiable arrof characters
        // StringBuilder is faster than StringBuffer
        StringBuilder builder = new StringBuilder("Hello"); //Not Thread Safe
-        builder.append(" Arjun");
-        System.out.println("Builder is: "+ builder);
-
-}      
+       builder.append(" Arjun");
+       System.out.println("Builder is: "+ builder);
+    }      
 }
