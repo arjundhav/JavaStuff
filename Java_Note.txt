@@ -154,7 +154,7 @@ Editions of JAVA:
            For ex: Games       
             
           
-DBC:  It's Java API to connect and execute the query with the database.
+JDBC:  It's Java API to connect and execute the query with the database.
         Uses JDBC drivers to connect with the DB 
     - java.sql package contains classes and interfaces for JDBC API    
     - Steps: import packkages -> Register Driver Class -> create Con -> Create SQL -> Execute sql -> View -> Close con         

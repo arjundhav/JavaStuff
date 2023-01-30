@@ -6,10 +6,12 @@ public class Key {
 	
    String n;
  
+   //Constructor
    public Key(){
 	 this("Unlock the Lock using Pass !!! \\n");
 	 }
 	
+	//Parameterized Constructor 
 	public Key(String n) {
       this.n="Welcome to KEY-Lock Tut !!! \\n";
 	}

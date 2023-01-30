@@ -12,6 +12,7 @@ public class NonAccessModifier {
 	private static void display() {
 		System.out.println("Static Function"+"\n");
 	}
+	
 	public static void main(String[] args){
 		
 		NonAccessModifier.display();

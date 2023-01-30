@@ -6,7 +6,8 @@ public class Hello {
 	 String greet; 
 	 static int staticVariable=15;
 	 
-	 public Hello() {
+	 //constructor
+	 public Hello() { 
 		 this.greet= "Hello, Welcome to";
 	 }
 	 public void publicModifier() {
