@@ -26,7 +26,13 @@ public class Hello {
 	 public static void staticTest() {
 		 System.out.println("Static Test");
 	 }
+
+	//  abstract void shape() {
+    //     abstract float area;
+	// 	//Basically these class doesnt have implemented
+	//  }
 	 
+
 	 public static void main(String[] args){    //String[] args is for command line arguments.
 		 System.out.println("Hello");
 		 
