@@ -4,12 +4,12 @@ import java.util.*;
 
 public class Key {
 	
-   String n;
+    String n;
  
-   //Constructor
-   public Key(){
+    //Constructor
+    public Key(){
 	 this("Unlock the Lock using Pass !!! \\n");
-	 }
+	}
 	
 	//Parameterized Constructor 
 	public Key(String n) {
